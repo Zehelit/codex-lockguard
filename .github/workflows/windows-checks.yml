@@ -11,7 +11,7 @@ jobs:
   windows:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
       - name: Sözdizimi ve kimlik senaryoları
         shell: powershell
         run: .\tests\Test-GuardLogic.ps1
