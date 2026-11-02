@@ -1,0 +1,20 @@
+# Yerel çalışma kayıtları ve derleme çıktıları yayımlanmaz.
+*.exe
+*.dll
+*.log
+*.tmp
+*.jsonl
+*-result.json
+*-status.json
+settings-backup.json
+controller.json
+health.json
+installation.json
+CodexLockGuard-task.xml
+CodexLockGuard-identity-task.xml
+.rollback-*/
+.env
+.env.*
+!.env.example
+.vs/
+.vscode/

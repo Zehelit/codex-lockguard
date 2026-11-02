@@ -1,0 +1,20 @@
+name: Windows kaynak kontrolleri
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Sözdizimi ve kimlik senaryoları
+        shell: powershell
+        run: .\tests\Test-GuardLogic.ps1
+      - name: Uyarı yardımcısını derle
+        shell: powershell
+        run: .\Build-IdentityAlert.ps1
